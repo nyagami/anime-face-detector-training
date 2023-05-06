@@ -5,3 +5,4 @@ bounded_psds/*
 pos.data
 neg.txt
 animeface.vec
+cascades/*
