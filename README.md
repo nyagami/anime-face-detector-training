@@ -57,7 +57,7 @@ py get_neg.py
 ```
 ./opencv_apps/createsamples.exe -info pos.data -vec animeface.vec -num 100 -w 24 -h 24
 ```
-- Dữ liệu tổng hợp sẽ được lưu tại animeface.vec
+- Dữ liệu tổng hợp sẽ được lưu tại `animeface.vec`
 
 # Training
 - `-numPos <number_of_positive_samples>`
@@ -66,3 +66,17 @@ py get_neg.py
 ./opencv_apps/haartraining.exe -data cascades -vec ./animeface.vec -bg ./neg.txt -numPos 100 -numNeg 200 -w 24 -h 24
 ```
 - Dữ liệu sau khi train sẽ được lưu tại thư mục `cascades`
+
+# Convert thành file .xml 
+```
+./opencv_apps/haarconv.exe cascades animeface.xml 24 24  
+```
+- file `animeface.xml` đã được tạo
+
+# Kiểm thử 
+- Tạo thư mục `input`
+- Thêm ảnh muốn detect (bao gồm cả có màu)
+```
+py main.py
+```
+- Kết quả sẽ được lưu tại thư mục `output`
