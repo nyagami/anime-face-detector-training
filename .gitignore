@@ -1,9 +1,11 @@
 venv
-pos/*
-neg/*
-bounded_psds/*
+pos
+neg
+bounded_psds
 pos.data
 neg.txt
 animeface.vec
-cascades/*
+cascades
 animeface.xml
+input
+output
