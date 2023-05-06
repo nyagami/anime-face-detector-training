@@ -2,5 +2,6 @@ venv
 pos/*
 neg/*
 bounded_psds/*
-pos.dat
+pos.data
 neg.txt
+animeface.vec

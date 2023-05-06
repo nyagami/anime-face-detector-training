@@ -24,7 +24,7 @@ for idx, psd_file in enumerate(os.listdir(bounded_dir)):
         pos_data.append((img_path, n_obj, rects))
     else:
         os.remove(img_path)
-with open('pos.dat', 'w') as f:
+with open('pos.data', 'w') as f:
     for pos in pos_data:
         f.write('  '.join([pos[0], str(pos[1]), '  '.join(pos[2])]))
         f.write('\n')
