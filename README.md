@@ -52,6 +52,19 @@ py get_bounds.py
 1. Tạo thư mục `neg`
 2. Thêm những ảnh không có mặt nhân vật anime vào, ảnh lưu dưới dạng gray scale (đen trắng)
 
+## Chi tiết hơn về Negative
+Ngoài ra nên cắt ảnh nền từ thư mục `pos` để làm mẫu negative
+1. Tải ảnh từ thư mục `pos` đã được tạo ở trên <br>
+![image](https://user-images.githubusercontent.com/86464880/236641605-c852761f-5479-4249-87a5-3326b26ca746.png)
+2. Chọn công cụ `crop` và xác định vùng không chứa mặt
+![image](https://user-images.githubusercontent.com/86464880/236641871-2756edec-359c-4bb1-bcd6-692be16f8816.png)
+3. Chọn ✅ để xén ảnh
+![image](https://user-images.githubusercontent.com/86464880/236641734-83d2425c-1997-4f9a-b1fa-893262b0a4c8.png)
+4. Lưu ảnh
+5. `Ctrl + Z` để hoàn tác và chọn vùng khác của ảnh (nếu muốn)
+![image](https://user-images.githubusercontent.com/86464880/236641773-6374aeb5-b533-4c37-893f-3f0a071b0fcb.png)
+6. Tương tự cho các ảnh khác
+
 ## Training
 ```
 py train.py
