@@ -17,7 +17,7 @@ for idx, psd_file in enumerate(os.listdir(bounded_dir)):
     rects = []
     for layer in psd:
         if layer.name == 'Background':
-            layer.composite().convert('RGB').save(img_path)
+            layer.composite().convert('RGB').convert('L').save(img_path)
         else:
             n_obj += 1
             bbox = layer.bbox
