@@ -12,6 +12,11 @@ Tạo virtualenv
 virtualenv venv
 ```
 
+Kích hoạt virtualenv
+```
+./venv/Scritps/activate
+```
+
 Clone source
 ```
 git clone https://github.com/nyagami/anime-face-detector-training.git
