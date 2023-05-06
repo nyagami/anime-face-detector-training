@@ -37,7 +37,7 @@ pip install -r requirements.txt
 4. Tên layer của ảnh phải là `Background`. Hãy sửa lại nếu nó là tên khác
 5. Sử dụng công cụ `shape`, dạng `hình chữ nhật` (hoặc hình vuông)
 6. Vẽ hình chữ nhật lên vị trí các khuôn mặt
-![image](https://user-images.githubusercontent.com/86464880/236610358-33792632-039d-452f-b4aa-396d6317de3e.png)
+![image](https://user-images.githubusercontent.com/86464880/236613315-d33c914c-3427-4d19-bda1-b72ef3ba22ae.png)
 7. Lưu lại định dạng PSD và chuyển vào thư mục `bounded_psds` vừa tạo, tương tự cho các ảnh khác
 8. Khi đã tạo đủ dữ liệu, tiến hành generate data
 ```
