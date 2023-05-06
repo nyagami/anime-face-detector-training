@@ -14,7 +14,7 @@ virtualenv venv
 
 Kích hoạt virtualenv
 ```
-./venv/Scritps/activate
+./venv/Scripts/activate
 ```
 
 Clone source
