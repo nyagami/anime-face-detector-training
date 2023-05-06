@@ -30,8 +30,6 @@ pip install -r requirements.txt
 
 # Tạo dữ liệu
 
-## Lưu ý: toàn bộ ảnh đều phải convert sang gray scale (đen trắng)
-
 ## Positvie
 1. Tạo thư mục `bounded_psds`
 2. Mở photoshop online
@@ -39,7 +37,7 @@ pip install -r requirements.txt
 4. Tên layer của ảnh phải là `Background`. Hãy sửa lại nếu nó là tên khác
 5. Sử dụng công cụ `shape`, dạng `hình chữ nhật` (hoặc hình vuông)
 6. Vẽ hình chữ nhật lên vị trí các khuôn mặt
-![image](https://user-images.githubusercontent.com/86464880/236602498-0aeffd5f-f575-4b87-ad8c-6b936f97f693.png)
+![image](https://user-images.githubusercontent.com/86464880/236610358-33792632-039d-452f-b4aa-396d6317de3e.png)
 7. Lưu lại định dạng PSD và chuyển vào thư mục `bounded_psds` vừa tạo, tương tự cho các ảnh khác
 8. Khi đã tạo đủ dữ liệu, tiến hành generate data
 ```
@@ -50,7 +48,7 @@ py get_bounds.py
 
 ## Negative
 1. Tạo thư mục `neg`
-2. Thêm những ảnh không có mặt nhân vật anime vào
+2. Thêm những ảnh không có mặt nhân vật anime vào, ảnh lưu dưới dạng gray scale (đen trắng)
 3. Khi đã thêm đủ dữ liệu, tiến hành generate data
 ```
 py get_neg.py
