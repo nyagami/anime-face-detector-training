@@ -1,1 +1,6 @@
 venv
+pos/*
+neg/*
+bounded_psds/*
+pos.dat
+neg.txt
