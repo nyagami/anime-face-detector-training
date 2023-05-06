@@ -6,6 +6,8 @@ pos_dir = 'pos'
 
 pos_data = []
 
+os.makedirs(pos_dir, exist_ok=True)
+
 for idx, psd_file in enumerate(os.listdir(bounded_dir)):
     psd_path = os.path.join(bounded_dir, psd_file)
     psd = PSDImage.open(psd_path)
@@ -25,7 +27,6 @@ for idx, psd_file in enumerate(os.listdir(bounded_dir)):
     else:
         os.remove(img_path)
 
-os.makedirs(pos_dir, exist_ok=True)
 with open('pos.data', 'w') as f:
     for pos in pos_data:
         f.write('  '.join([pos[0], str(pos[1]), '  '.join(pos[2])]))
