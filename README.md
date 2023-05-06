@@ -25,6 +25,8 @@ git clone https://github.com/nyagami/anime-face-detector-training.git
 Cài đặt môi trường
 ```
 cd anime-face-detector-training
+```
+```
 pip install -r requirements.txt
 ```
 
@@ -49,30 +51,10 @@ py get_bounds.py
 ## Negative
 1. Tạo thư mục `neg`
 2. Thêm những ảnh không có mặt nhân vật anime vào, ảnh lưu dưới dạng gray scale (đen trắng)
-3. Khi đã thêm đủ dữ liệu, tiến hành generate data
-```
-py get_neg.py
-```
-- Dữ liệu về ảnh sẽ được lưu tại `neg.txt`
 
-# Tạo file vector
-- Giả sử ta có 100 ảnh ở thư mục `pos`, tham số cho `-num` sẽ là `100`
+## Training
 ```
-./opencv_apps/createsamples.exe -info pos.data -vec animeface.vec -num 100 -w 24 -h 24
-```
-- Dữ liệu tổng hợp sẽ được lưu tại `animeface.vec`
-
-# Training
-- `-numPos <number_of_positive_samples>`
-- `-numNeg <number_of_negative_samples>`
-```
-./opencv_apps/haartraining.exe -data cascades -vec ./animeface.vec -bg ./neg.txt -numPos 100 -numNeg 200 -w 24 -h 24
-```
-- Dữ liệu sau khi train sẽ được lưu tại thư mục `cascades`
-
-# Convert thành file .xml 
-```
-./opencv_apps/haarconv.exe cascades animeface.xml 24 24  
+py train.py
 ```
 - file `animeface.xml` đã được tạo
 
